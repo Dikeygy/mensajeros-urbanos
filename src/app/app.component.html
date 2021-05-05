@@ -1,0 +1,219 @@
+<main class="d-flex">
+  <div class="container px-4">
+    <div class="row my-5">
+
+        <!-- Nav and Toggle -->
+        <div class="d-flex justify-content-between align-items-center mobile">
+          <div class="social-media">
+            <h1>Social Media Dashboard</h1>
+            <span>Total Followers: 23,004</span>
+          </div>
+
+          <div class="mode-style">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" (click)="addMyClass()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Social List -->
+        <div class="container" style="margin-top: 40px;">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card-social facebook">
+                <div class="col-12">
+                  <img src="./../assets/images/icon-facebook.svg" alt="icon facebook">
+                  <span class="social-reference">@nathanf</span>
+                </div>
+
+                <div class="col-12 amount">
+                  <p>1987</p>
+                  <small>Followers</small>
+                </div>
+
+                <div class="col-12">
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 12 Today</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-social twitter">
+                <div class="col-12">
+                  <img src="./../assets/images/icon-twitter.svg" alt="icon twitter">
+                  <span class="social-reference">@nathanf</span>
+                </div>
+
+                <div class="col-12 amount">
+                  <p>1044</p>
+                  <small>Followers</small>
+                </div>
+
+                <div class="col-12">
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 99 Today</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-social instagram">
+                <div class="col-12">
+                  <img src="./../assets/images/icon-instagram.svg" alt="icon instagram">
+                  <span class="social-reference">@realnathanf</span>
+                </div>
+
+                <div class="col-12 amount">
+                  <p>11k</p>
+                  <small>Followers</small>
+                </div>
+
+                <div class="col-12">
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 1099 Today</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-social youtube">
+                <div class="col-12">
+                  <img src="./../assets/images/icon-youtube.svg" alt="icon youtube">
+                  <span class="social-reference">Nathan F.</span>
+                </div>
+
+                <div class="col-12 amount">
+                  <p>8239</p>
+                  <small>Subscribers</small>
+                </div>
+
+                <div class="col-12">
+                  <span class="status down"><img src="./../assets/images/icon-down.svg" alt="icon-down"> 144 Today</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="col-md-12">
+          <h2 class="title-over">Overview - Today</h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Page Views</span>
+                  <img src="./../assets/images/icon-facebook.svg" alt="icon facebook">
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">87</span>
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 3%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Likes</span>
+                  <img src="./../assets/images/icon-facebook.svg" alt="icon facebook">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">52</span>
+                  <span class="status down"><img src="./../assets/images/icon-down.svg" alt="icon-down"> 2%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Likes</span>
+                  <img src="./../assets/images/icon-instagram.svg" alt="icon instagram">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">5462</span>
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 2257%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Profile Views</span>
+                  <img src="./../assets/images/icon-instagram.svg" alt="icon instagram">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">52k</span>
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 1375%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Retweets</span>
+                  <img src="./../assets/images/icon-twitter.svg" alt="icon twitter">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">117</span>
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 303%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Likes</span>
+                  <img src="./../assets/images/icon-twitter.svg" alt="icon twitter">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">507</span>
+                  <span class="status up"><img src="./../assets/images/icon-up.svg" alt="icon-up"> 553%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Likes</span>
+                  <img src="./../assets/images/icon-youtube.svg" alt="icon youtube">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">107</span>
+                  <span class="status down"><img src="./../assets/images/icon-down.svg" alt="icon-down"> 19%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-overview rounded">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-text">Total Views</span>
+                  <img src="./../assets/images/icon-youtube.svg" alt="icon youtube">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="overview-value">1407</span>
+                  <span class="status down"><img src="./../assets/images/icon-down.svg" alt="icon-down"> 12%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</main>
+
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Jaime Suarez Esteban</a>.
+</div>

@@ -1,0 +1,234 @@
+.mode-light {
+  --background: hsl(0, 0%, 100%);
+  --top-bg: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --text-dgb: hsl(228, 12%, 44%);
+  --text-vdb: hsl(230, 17%, 14%);
+  --toggle: hsl(230, 22%, 74%);
+  transition: all 0.3s ease-out;
+}
+
+.mode-dark {
+  --background: hsl(230, 17%, 14%);
+  --top-bg: hsl(232, 19%, 15%);
+  --card-bg: hsl(228, 28%, 20%);
+  --text-dgb: hsl(228, 34%, 66%);
+  --text-vdb: hsl(0, 0%, 100%);
+  --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  /*transition: 0.2s;*/
+  transition: all 0.3s ease-out;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background)!important;
+}
+
+/* Nav and Toggle */
+.social-media h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--text-vdb);
+}
+
+.social-media span {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-dgb);
+}
+
+.mode-style {
+  font-weight: 700;
+  color: var(--text-dgb);
+}
+
+.mode-style span {
+  padding-right: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  background-image: var(--toggle);
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(55,142,230);
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--background);
+  transition: .4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input + .slider {
+  background: var(--toggle);
+}
+
+input:checked + .slider {
+  background: var(--toggle);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Social List */
+.card-social {
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  margin: 2%;
+}
+
+.card-social span.social-reference {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-dgb);
+}
+
+.card-social .amount {
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--text-vdb);
+}
+
+.card-social .amount p {
+  margin-bottom: -60px;
+}
+
+.card-social .amount small {
+  padding-top: -30px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: var(--text-dgb);
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%)
+}
+
+.facebook {
+  border-top: 3px solid hsl(208, 92%, 53%);
+}
+
+.twitter {
+  border-top: 3px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+  border-top: 3px solid red;
+  border-radius: 5px;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1 stretch;
+}
+
+.youtube {
+  border-top: 3px solid hsl(348, 97%, 39%);
+}
+
+/* Overview */
+.title-over {
+  margin: 40px 0 20px 0;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text-vdb);
+}
+
+.card-overview {
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  margin: 2%;
+}
+
+.overview-text {
+  font-weight: 700;
+  color: var(--text-dgb);
+}
+
+.overview-value {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--text-vdb);
+}
+
+.card-overview .up,
+.card-overview .down {
+  margin-top: 40px;
+}
+
+.attribution {
+  color: var(--text-vdb);
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-device-width: 375px) and (max-device-width: 667px) {
+  .mobile {
+    display: inline-block!important;
+  }
+
+  .social-media h1 {
+    min-width: 100%;
+    font-size: 28px;
+  }
+
+  .mode-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    border-top: 1px solid var(--text-dgb);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
